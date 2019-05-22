@@ -12,35 +12,35 @@
     "value": "!tts",
     "label": "Command to convert whisper to TTS",
     "tooltip": "",
-    "group": ""
+    "group": "General"
   },
    "TTSstart": {
     "type": "textbox",
     "value": "!ttsstart",
     "label": "Command to enable TTS control",
-    "tooltip": "",
-    "group": ""
+    "tooltip": "Follow this command by the name of the user to whom you want to give control. (No @)",
+    "group": "General"
   },
    "TTSend": {
     "type": "textbox",
     "value": "!ttsend",
     "label": "Command to end TTS control",
     "tooltip": "",
-    "group": ""
+    "group": "General"
   },
    "ttsSmsg": {
     "type": "textbox",
     "value": "{0}, you are now in control of TTS. Whisper: {1} followed by the messages. Please do not abuse!",
     "label": "Start message",
     "tooltip": "Message to viewer controlling TTS when starting. {0}: viewer, {1}: command",
-    "group": ""
+    "group": "General"
   },
    "ttsEmsg": {
     "type": "textbox",
     "value": "{0}, you can no longer control TTS. Thank you.",
     "label": "End message",
     "tooltip": "Message to viewer controlling TTS when ends. {0}: viewer",
-    "group": ""
+    "group": "General"
   },
     "Permission": {
     "type": "dropdown",
