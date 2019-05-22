@@ -1,0 +1,60 @@
+{
+  "output_file": "settings.json",
+  "OnlyLive": {
+    "type": "checkbox",
+    "value": false,
+    "label": "Only when live",
+    "tooltip": "Command is only active when stream is live",
+    "group": "General"
+  },
+   "TTStext": {
+    "type": "textbox",
+    "value": "!tts",
+    "label": "Command to convert whisper to TTS",
+    "tooltip": "",
+    "group": ""
+  },
+   "TTSstart": {
+    "type": "textbox",
+    "value": "!ttsstart",
+    "label": "Command to enable TTS control",
+    "tooltip": "",
+    "group": ""
+  },
+   "TTSend": {
+    "type": "textbox",
+    "value": "!ttsend",
+    "label": "Command to end TTS control",
+    "tooltip": "",
+    "group": ""
+  },
+   "ttsSmsg": {
+    "type": "textbox",
+    "value": "{0}, you are now in control of TTS. Whisper: {1} followed by the messages. Please do not abuse!",
+    "label": "Start message",
+    "tooltip": "Message to viewer controlling TTS when starting. {0}: viewer, {1}: command",
+    "group": ""
+  },
+   "ttsEmsg": {
+    "type": "textbox",
+    "value": "{0}, you can no longer control TTS. Thank you.",
+    "label": "End message",
+    "tooltip": "Message to viewer controlling TTS when ends. {0}: viewer",
+    "group": ""
+  },
+    "Permission": {
+    "type": "dropdown",
+    "value": "Caster",
+    "items": ["Everyone","Regular","Subscriber","GameWisp Subscriber","User_Specific","Min_Rank","Min_Points","Min_Hours","Moderator","Editor","Caster"],
+    "label": "Permission level",
+    "tooltip": "Set the permission level for the star/end commands",
+    "group": "General"
+  },
+    "PermissionInfo": {
+    "type": "textbox",
+    "value": "",
+    "label": "Permission level info",
+    "tooltip": "Set the user, rank or tier for permission",
+    "group": "General"
+  },
+ }
