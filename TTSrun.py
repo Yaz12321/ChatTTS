@@ -7,8 +7,7 @@ speak = wincl.Dispatch("SAPI.SpVoice")
 speak.Rate = 3 ## Rate of speech: -10 (slowest) to 10 (fastest)
 speak.Volume = 100 ## Speech volume: 0 - 100
 
-
-print "hello"
+print "Keep this window open to allow Text to Speech"
 while True:
     f = open("TTS.txt","r+")
     text = f.read()
