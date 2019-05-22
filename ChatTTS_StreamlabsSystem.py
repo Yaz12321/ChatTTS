@@ -235,13 +235,21 @@ def Execute(data): # Handle chat messages. Function is called whenever there is 
             whisper(viewer,MySettings.ttsEmsg.format(viewer))
 
         
-        
+        if MySettings.TTStext == "":
+            TTST = True
+        else:
+            if data.GetParam(0).lower() == MySettings.TTStext:
+                TTST = True
+            else:
+                TTST = False    
 
         #check if user has permission
-        if data.IsChatMessage() and data.GetParam(0).lower() == MySettings.TTStext and data.User.lower() == viewer.lower():
+        if data.IsChatMessage() and TTST and data.User.lower() == viewer.lower():
             path = os.path.dirname(os.path.abspath(__file__))
+            text = data.Message
+            text = text.replace(MySettings.TTStext,"")
             f= open("{}/TTS.txt".format(path),"w+")
-            f.write(data.Message)
+            f.write(text)
             f.close
             
 

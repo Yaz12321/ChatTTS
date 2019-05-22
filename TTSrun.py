@@ -10,9 +10,11 @@ while True:
     if text != "":
         
         print("Message read")
+        
         print(text)
         f = open("TTS.txt","w+")
         #f.write("")
         f.close
-    text = text.replace("!tts","")
     speak.Speak(text)
+    
+    
