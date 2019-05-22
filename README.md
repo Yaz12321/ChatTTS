@@ -5,7 +5,7 @@ This is an early version of the script. You need to run TTSrun.py manually (and 
 
 Future versions will fix this.
 
-If TTSrn.py crashes, it might be because win32com library is not installed. So, open Command Prompt, and type "start C:\python27\scripts\pip.exe install win32com" (without quotes) to install the library. Once it is installed, close command prompt and try TTSrun.py again. You will need to do this only once.
+If TTSrn.py crashes, it might be because win32com library is not installed. So, open Command Prompt, and type "start C:\python27\scripts\pip.exe install pywin32" (without quotes) to install the library. Once it is installed, close command prompt and try TTSrun.py again. You will need to do this only once.
 
 To change the rate and volume of speech: 
 1- right click on TTSrun.py
