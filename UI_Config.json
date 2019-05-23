@@ -57,4 +57,59 @@
     "tooltip": "Set the user, rank or tier for permission",
     "group": "General"
   },
+   "Voice": {
+        
+	"group": "General", 
+        
+	"items": [
+"Microsoft Hazel Desktop","Microsoft David Desktop","Microsoft Zira Desktop"],
+	"label": "Voice", 
+        
+	"tooltip": "Select speech voice", 
+        
+	"type": "dropdown", 
+        
+	"value": "Microsoft Hazel Desktop"
+    
+  }, 
+    
+   "Rate": {
+        
+	"group": "General", 
+        
+	"label": "Rate [-10,10]", 
+        
+	"max": 10,
+
+        "min": -10, 
+        
+	"ticks": 1, 
+        
+	"tooltip": "Rate of speech", 
+        
+	"type": "slider", 
+        
+	"value": 0
+    
+  }, 
+    
+   "Volume": {
+        
+	"group": "General", 
+        
+	"label": "Volume", 
+        
+	"max": 100, 
+        
+	"min": 1, 
+        
+	"ticks": 1, 
+        
+	"tooltip": "Volume of speech", 
+        
+	"type": "slider", 
+        
+	"value": 50.00
+    
+  },
  }
