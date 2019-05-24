@@ -260,7 +260,7 @@ def Execute(data): # Handle chat messages. Function is called whenever there is 
                 TTST = False    
 
         #check if user has permission
-        if data.IsChatMessage() and TTST and data.User.lower() == viewer.lower():
+        if data.IsChatMessage() and TTST and TTS and data.User.lower() == viewer.lower():
             path = os.path.dirname(os.path.abspath(__file__))
             text = data.Message
             text = text.replace(MySettings.TTStext,"")
